@@ -25,7 +25,6 @@ function Scramble({text}:{text:string}) {
 }
 
 export default function App(){
-  const [active,setActive]=useState('01')
   useEffect(()=>{
     gsap.fromTo('.hero-kicker,.hero-title,.hero-copy,.hero-actions,.gallery-intro,.artwork-card',
       {y:24,opacity:0},{y:0,opacity:1,duration:1,stagger:.09,ease:'power3.out',delay:.15})
