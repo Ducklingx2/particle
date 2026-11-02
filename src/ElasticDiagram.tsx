@@ -7,7 +7,6 @@ export default function ElasticDiagram() {
   const [dragging,setDragging]=useState(false)
   const origin={x:220,y:110}
   const [point,setPoint]=useState({x:220,y:110})
-  const start=useRef({x:0,y:0})
   const update=(e:React.PointerEvent<SVGSVGElement>)=>{
     const rect=svgRef.current!.getBoundingClientRect()
     const x=(e.clientX-rect.left)/rect.width*440
